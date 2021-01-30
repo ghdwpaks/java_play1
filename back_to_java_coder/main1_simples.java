@@ -32,7 +32,7 @@ public class main1_simples {
 	public static int func4_multiplication(int arr_num[]) {
 		int int_result = 0;
 		int arr_lang = arr_num.length;
-		for (int i = 0; i < arr_lang; i++) int_result = arr_num[i];
+		for (int i = 0; i < arr_lang; i++) int_result = int_result + arr_num[i];
 		return int_result;
 	}
 	
@@ -56,7 +56,7 @@ public class main1_simples {
 		System.out.println("");
 		
 		String	abc;
-		System.out.print("abc >>");
+		System.out.print("¹®Àå abc >>");
 		abc = sc.next();
 		System.out.println("abc = " + abc);
 		System.out.println("");
@@ -83,7 +83,7 @@ public class main1_simples {
 		arr_num[3] = main_f; System.out.println("main_f = " + main_f);
 		arr_num[4] = main_g; System.out.println("main_g = " + main_g);
 		int main_re_1 = func4_multiplication(arr_num);
-		System.out.println(main_re_1);
+		System.out.println("main_re_1 = " + main_re_1);
 		System.out.println("");
 		
 		int main_re_arr_1[] = fun5_multiplication_return_arr(arr_num);
