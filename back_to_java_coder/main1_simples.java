@@ -1,5 +1,6 @@
 package back_to_java_coder;
 import java.util.*;
+import back_to_java_coder.main3_simples;
 
 public class main1_simples {
 	
@@ -67,10 +68,14 @@ public class main1_simples {
 		System.out.println("");
 		
 		int main_c = 0, main_d = 0;
+		main_c = main3_simples.func8_only_num(main_c, "main_c");
+		main_d = main3_simples.func8_only_num(main_d, "main_d");
+		/*
 		System.out.print("숫자 main_c >>");
 		main_c = sc.nextInt();
 		System.out.print("숫자 main_d >>");
 		main_d = sc.nextInt();
+		 */
 		int main_e =func3_add_nums(main_c, main_d);
 		System.out.println("main_e = " + main_e);
 		System.out.println("");
