@@ -1,5 +1,6 @@
 package back_to_java_coder;
 import java.util.*;
+import java.io.*;
 import back_to_java_coder.main3_simples;
 
 public class main1_simples {
@@ -96,6 +97,9 @@ public class main1_simples {
 			System.out.println("main_re_arr_1["+i+"] = " + main_re_arr_1[i]);
 		}
 		System.out.println("");
+		
+		
+		
 		
 		
 		

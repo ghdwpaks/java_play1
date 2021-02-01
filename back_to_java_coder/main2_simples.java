@@ -17,6 +17,11 @@ public class main2_simples {
 		
 		return result_str; 
 	}
+	
+	public static String func6_String_just_2(String str1 , String str2) {
+		String result = str1.concat(str2);
+		return result;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
