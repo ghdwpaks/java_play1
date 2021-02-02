@@ -1,6 +1,8 @@
 package back_to_java_coder;
 import java.util.*;
 import java.io.*;
+import java.text.SimpleDateFormat;
+
 import back_to_java_coder.main3_simples;
 
 public class main1_simples {
@@ -45,6 +47,26 @@ public class main1_simples {
 		}
 		return arr_num_re;
 	}
+	
+	public static String func13_time_getter() {
+		String result = "";
+		SimpleDateFormat format1 = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat format2 = new SimpleDateFormat ( "yyyy년 MM월dd일 HH시mm분ss초");
+				
+		Calendar time = Calendar.getInstance();
+		       
+		String format_time1 = format1.format(time.getTime());
+		String format_time2 = format2.format(time.getTime());
+		        
+		System.out.println(format_time1);
+		System.out.println(format_time2);
+		
+		
+		
+		return result;
+	}
+	
+	
 	
 	
 	public static void main(String[] args) {
@@ -97,6 +119,15 @@ public class main1_simples {
 			System.out.println("main_re_arr_1["+i+"] = " + main_re_arr_1[i]);
 		}
 		System.out.println("");
+		
+		func13_time_getter();
+		
+		String str2 = "81-654-424-4895-4924";
+		String[] arr2 = str2.split("-",6);
+		System.out.println(arr2.length);
+		for (int i = 0; i < arr2.length; i++) System.out.println(i+"번째 쉘 내용 : " + arr2[i]);
+		
+		
 		
 		
 		
