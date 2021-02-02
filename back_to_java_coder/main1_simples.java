@@ -70,10 +70,18 @@ public class main1_simples {
 	
 	
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String userans1 = "";
+		System.out.print("userans1\n>>");
+		userans1 = sc.next();
+		System.out.println("userans1 = " + userans1);
+		System.out.println(file_control_center.func13_word_search(userans1, "welcome"));
+		
+		
 		//강제형변환
 		System.out.println("program started!");
 		String main_a;
-		Scanner sc = new Scanner(System.in);
 		System.out.print("문장 main_a >>");
 		main_a = sc.next();
 		System.out.println("a = " + main_a);

@@ -50,12 +50,14 @@ public class main5_file_maker {
 
 
 	
-	public static boolean func11_file_maker(String filename) throws IOException {
+	public static boolean func11_file_maker_reseter(String filename) throws IOException {
 		boolean result = false;
 		
 		String ow = "C:\\workspace\\eclipse_workspace\\back_to_java_coder\\src\\back_to_java_coder\\file_station\\";
 		FileOutputStream output = new FileOutputStream(f6sj2(ow, filename));
-		String data = "reseted "+filename+"!"; 
+		
+		//String data = "reseted "+filename+"!";
+		String data = ""; 
 		output.write(data.getBytes());
 		/*
 		for(int i=1; i<11; i++) {
@@ -92,7 +94,7 @@ public class main5_file_maker {
 		String ow = "C:\\workspace\\eclipse_workspace\\back_to_java_coder\\src\\back_to_java_coder\\file_station\\";
 		System.out.println("filepath = "+ f6sj2(ow,"test_text2.txt"));
 		//파일의 path 무결성 확인됨
-        func11_file_maker("test_text1.txt");
+        func11_file_maker_reseter("test_text1.txt");
         func10_file_ops_shower(ow.concat("test_text2.txt"),1);
 		
 		
