@@ -42,6 +42,19 @@ public class main7_sort {
 
 	public static void main(String[] args) {
 		System.out.println("main7 sort started!");
+		System.out.println("영어문자를 몇개 입력하시겠습니까?");
+		int userans2 = 0;
+		userans2 = main3_simples.func8_only_num(userans2, "userans2");
+		String[] idx2 = new String[userans2];
+		for (int i = 0; i < idx2.length; i++) {
+			idx2[i] = main3_simples.func8_only_eng(idx2[i], "idx["+i+"]");
+		}
+		
+		
+		
+		
+		
+		
 		System.out.println("숫자를 몇개 입력하시겠습니까?");
 		int userans1 = 0;
 		userans1 = main3_simples.func8_only_num(userans1, "userans"+1);

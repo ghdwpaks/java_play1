@@ -1,6 +1,7 @@
 package back_to_java_coder;
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 
 
@@ -42,7 +43,26 @@ public class main3_simples {
 		return para;
 	}
 	
-	public static void main(String[] args) {
+	public static String func8_only_eng(String para ,String para_name) {
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			System.out.print(para_name + ">>");
+			para = sc.next();
+			if (func8_only_eng_check_eng(para)) {
+				break;
+			}
+			else {
+				System.out.println("입력이 잘못됐습니다.");
+			}
+		}
+		return para;
+	}
+	
+	private static boolean func8_only_eng_check_eng(String word) {
+        return Pattern.matches("^[a-zA-Z]*$", word);
+    }
+	
+	public static void main(String[] args) throws NumberFormatException{
 		/*
 		 * 1. 일단은 String 형식으로 받고서
 		 * 2. 숫자로 바꿀 수 있는지 판별하고
@@ -50,8 +70,12 @@ public class main3_simples {
 		 */
 		
 		System.out.println("main3 started");
-		
 		Scanner sc = new Scanner(System.in);
+		
+		String word = sc.next();
+		System.out.println(Pattern.matches("^[a-zA-Z]*$", word));
+		
+		
 		
 		String astr = "";
 		
