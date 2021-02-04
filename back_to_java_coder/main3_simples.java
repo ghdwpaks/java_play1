@@ -31,7 +31,7 @@ public class main3_simples {
 		String para_sup1 = "";
 		while (true) {
 			System.out.print(para_name + ">>");
-			para_sup1 = sc.next();
+			para_sup1 = sc.nextLine();
 			if (func7_1_check_String(para_sup1)) {
 				para = Integer.parseInt(para_sup1);
 				break;
@@ -47,7 +47,7 @@ public class main3_simples {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			System.out.print(para_name + ">>");
-			para = sc.next();
+			para = sc.nextLine();
 			if (func8_only_eng_check_eng(para)) {
 				break;
 			}
@@ -72,7 +72,7 @@ public class main3_simples {
 		System.out.println("main3 started");
 		Scanner sc = new Scanner(System.in);
 		
-		String word = sc.next();
+		String word = sc.nextLine();
 		System.out.println(Pattern.matches("^[a-zA-Z]*$", word));
 		
 		
@@ -80,7 +80,7 @@ public class main3_simples {
 		String astr = "";
 		
 		System.out.println("astr = " + astr);
-		astr = sc.next();
+		astr = sc.nextLine();
 		System.out.println("astr = " + astr);
 		
 		
@@ -92,7 +92,7 @@ public class main3_simples {
 		System.out.println("aint1 = " + aint1);
 		
 		while (true) {
-			aint1_sup1 = sc.next();
+			aint1_sup1 = sc.nextLine();
 			if (func7_1_check_String(aint1_sup1)) {
 				aint1 = Integer.parseInt(aint1_sup1);
 				break;

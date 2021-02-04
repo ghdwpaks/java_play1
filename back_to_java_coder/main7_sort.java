@@ -10,7 +10,7 @@ public class main7_sort {
         	System.out.printf("\n%dÂ÷ Á¤·Ä : ", size-i);
             for(int j=0; j<i; j++) {
                 if(a[j] > a[j+1]) {
-                	func14_1_swap(a,j,j+1);
+                	func14_1_swap_int(a,j,j+1);
                 }
                 System.out.printf("\n\t");
                 for(int v : a) {
@@ -21,22 +21,45 @@ public class main7_sort {
         System.out.println();
     }
 	
+	
+	
+	
 	public static int[] func14_sort_int_blind(int a[]) {
         int size = a.length;
         for(int i=size-1; i>0; i--) {
             for(int j=0; j<i; j++) {
-                if(a[j] > a[j+1])func14_1_swap(a,j,j+1);
+                if(a[j] > a[j+1])func14_1_swap_int(a,j,j+1);
             }            
         }
         return a;
     }
 
-	public static void func14_1_swap(int a[], int idx1, int idx2) {
+	private static void func14_1_swap_int(int a[], int idx1, int idx2) {
         int temp = a[idx1];
         a[idx1] = a[idx2];
         a[idx2] = temp;
     }  
-
+	
+	public static void func14_sort_String_shower(String[] a) {
+		int c = 0;
+		for (int i = 0; i <a.length; i++) {
+			for (int j = 0; j < a.length-1; j++) {
+				c++;
+				if (a[j].compareTo(a[j+1])>0) {
+					func14_2_swap_String(a, j, j+1);
+				}
+			}
+		}
+	}
+	
+	private static void func14_2_swap_String(String[] list, int a, int b) {
+		String tmp;
+		tmp = list[a];
+		list[a] = list[b];
+		list[b] = tmp;
+	}
+	
+	
 
 
 
@@ -49,8 +72,6 @@ public class main7_sort {
 		for (int i = 0; i < idx2.length; i++) {
 			idx2[i] = main3_simples.func8_only_eng(idx2[i], "idx["+i+"]");
 		}
-		
-		
 		
 		
 		

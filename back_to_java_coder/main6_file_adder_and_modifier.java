@@ -20,7 +20,7 @@ public class main6_file_adder_and_modifier {
 		FileWriter adder = new FileWriter(f6sj2(ow,filename), true);
 		String input = "";
         while(true) {
-        	input = sc.next();
+        	input = sc.nextLine();
         	//System.out.println("input = " + input);
         	//System.out.println("input == exit ? " + (input == "exit"));
         	if(input.equals("exit")) {
@@ -40,7 +40,7 @@ public class main6_file_adder_and_modifier {
 		/*
 		Scanner sc = new Scanner(System.in);
 		String ans1 = "";
-		ans1 = sc.next();
+		ans1 = sc.nextLine();
 		System.out.println("ans1 = " + ans1);
 		System.out.println("ans1 == exit ? " + (ans1 == "exit"));
 		System.out.println("ans1.equals(exit) ? " + ans1.equals("exit"));

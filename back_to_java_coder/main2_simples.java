@@ -34,7 +34,7 @@ public class main2_simples {
 		String names[] = new String[5];
 		for (int i = 0; i < names.length; i++) {
 		   System.out.print("name["+i+"]>>");
-		   names[i] = sc.next();
+		   names[i] = sc.nextLine();
 		}
 		/*
 			for (int i = 0; i < names.length; i++) {
@@ -49,7 +49,6 @@ public class main2_simples {
 		System.out.println("숫자들을 입력해주세요.");
 		for (int i = 0; i < ages.length; i++) {
 			System.out.print("ages["+i+"]>>" );
-			ages[i] = sc.nextInt();
 		}
 		
 		System.out.println("숫자들을 더한 값은 다음과 같습니다.");

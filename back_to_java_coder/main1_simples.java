@@ -74,7 +74,7 @@ public class main1_simples {
 		
 		String userans1 = "";
 		System.out.print("userans1\n>>");
-		userans1 = sc.next();
+		userans1 = sc.nextLine();
 		System.out.println("userans1 = " + userans1);
 		System.out.println(file_control_center.func13_word_search(userans1, "welcome"));
 		
@@ -83,13 +83,13 @@ public class main1_simples {
 		System.out.println("program started!");
 		String main_a;
 		System.out.print("문장 main_a >>");
-		main_a = sc.next();
+		main_a = sc.nextLine();
 		System.out.println("a = " + main_a);
 		System.out.println("");
 		
 		String	abc;
 		System.out.print("문장 abc >>");
-		abc = sc.next();
+		abc = sc.nextLine();
 		System.out.println("abc = " + abc);
 		System.out.println("");
 		
@@ -103,9 +103,9 @@ public class main1_simples {
 		main_d = main3_simples.func8_only_num(main_d, "main_d");
 		/*
 		System.out.print("숫자 main_c >>");
-		main_c = sc.nextInt();
+		main_c = sc.nextLineInt();
 		System.out.print("숫자 main_d >>");
-		main_d = sc.nextInt();
+		main_d = sc.nextLineInt();
 		 */
 		int main_e =func3_add_nums(main_c, main_d);
 		System.out.println("main_e = " + main_e);

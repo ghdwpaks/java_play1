@@ -42,7 +42,7 @@ public class file_control_center {
 		String filename = "test_text1.txt";
 		String filename_temp = "";
 		System.out.print("어떤 파일을 수정하시겠습니까?\n>>");
-		filename_temp = sc.next();
+		filename_temp = sc.nextLine();
 		if(filename_temp != null || !(filename_temp.equals("")) || !(filename_temp.equals(null))) {
 			filename = filename_temp;
 		}
@@ -60,7 +60,7 @@ public class file_control_center {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("private func, create 진입");
 		System.out.println("어떤 파일을 만드시겠습니까?");
-		String userans2 = sc.next();
+		String userans2 = sc.nextLine();
 		if (func13_word_search(userans2, ".txt")) userans2 = userans2.replace(".txt", "");
 		main5_file_maker.func11_file_maker_reseter(userans2+".txt");
 	}
@@ -74,7 +74,7 @@ public class file_control_center {
 							+ "추가 수정은	m \n"
 							+ "리셋은  	r \n"
 							+ "파일생성은 	c \n>>");
-		userans1 = sc.next();
+		userans1 = sc.nextLine();
 		System.out.println("userans1 = " + userans1);
 		if (userans1.equals("m") || userans1.equals("modify")) {
 			modify();
